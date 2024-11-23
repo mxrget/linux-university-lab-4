@@ -34,5 +34,5 @@ nc -l -p 1234
 ![image](https://github.com/mxrget/linux-university-lab-4/blob/main/lab4-pic1.png)
 7. Осознаём, что сделали не то, что просили в лабораторной. Устанавливаем ping: ```apt-get update && apt-get install -y iputils-ping```.
 8. Запускаем оба контейнера через bash, проводим пинг по имени. Он получается:
-![image](https://github.com/mxrget/linux-university-lab-4/blob/main/lab4-pic1.png)
+![image](https://github.com/mxrget/linux-university-lab-4/blob/main/lab4-pic2.png)
 9. Готово. Контейнеры не только передают друг другу огонёк, но и пингуют друг друга. Можно их остановить.
