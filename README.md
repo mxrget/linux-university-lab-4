@@ -22,7 +22,7 @@ CMD ["aafire"]
 2. Собираем образ докерфайла в папке ```aafire-container```. Команда сборки: ```sudo docker build -t aafire-image ./aafire-container```. запуск контейнера - ```sudo docker run -it aafire-image```. \
 3. Создаём сети Docker: ```sudo docker create lab4-network```. Запускаем контейнеры в одной сети: \
 Для первого - ```sudo docker run -it --network lab4-network --name aafire-container aafire-image bash```. \
-Для второго - ```sudo docker run -it --network lab4-network --name receiver-container debian:latest```. \
+Для второго - ```sudo docker run -it --network lab4-network --name receiver-container ubuntu:latest```. \
 Первый контейнер - передаёт, второй - получает. Флаг ```--name``` и задал им названия контейнеров. ```bash``` в первом случае потребовался, потому что контейнер с ASCII-анимацией занимает консоль, и поэтому я не мог вводить команды. \
 4. Устанавливаем ```netcat-openbsd``` на второй контейнера, чтобы можно было принимать сигналы (```-l -p``` - слушать 1234 порт):
 ```
